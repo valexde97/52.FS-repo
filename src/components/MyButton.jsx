@@ -1,8 +1,7 @@
 import "./myButton.css"
-function MyButton() {
+function MyButton(text, func) {
   return (
-   <button
-    className="myButton">Click Me!</button>
+   <button onClick={func} className="myButton">{text}Click Me!</button>
   )
 }
 

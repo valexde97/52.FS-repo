@@ -5,6 +5,7 @@ import Lesson02 from "./lessons/lesson02/Lesson02";
 import Homework02 from "./homeworks/homework02/Homework02";
 import ProfileCard from "./components/ProfileCard";
 import Lesson03 from "./lessons/lesson03/lesson03";
+import Button from "./homeworks/homework04/Button";
 
 //Объявление функции из компонента. Компонент называется с большой буквы
 //и имеет расширение jsx
@@ -19,6 +20,7 @@ function App() {
       {/* <Lesson02/> */}
       <Lesson03/>
       {/* <ProfileCard /> */}
+      {/* <Button/> */}
     </>
   );
 }
