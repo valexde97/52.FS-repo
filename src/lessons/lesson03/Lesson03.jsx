@@ -4,18 +4,19 @@ import Button from "../../homeworks/homework04/Button";
 
 function Lesson03() {
   function profilePicture(){
-    const image = "https://img-webcalypt.ru/uploads/admin/images/meme-templates/b4kHFk8Pz3I7OfhMUY1RtuGFvwxOFTMt.jpg"
-    return(<img src={image} alt="some-img"></img>)
+    return("https://img-webcalypt.ru/uploads/admin/images/meme-templates/b4kHFk8Pz3I7OfhMUY1RtuGFvwxOFTMt.jpg")
   }
 
+  let count = 0;
+
   function someFunctionOne(name) {
-    let count = 0;
+    
 
     if (count < 3) {
       count++;
-      console.log(`${name} you clicked me ${count} times`);
+      console.log(`${name} you pushed me ${count} times`);
     } else {
-      console.log(`${name} stop clicking me🥺!`);
+      console.log(`${name} stop pushing me🥺!`);
     }
   }
 
@@ -28,8 +29,9 @@ function Lesson03() {
 
 
 
-        <Button text="Click me!" func={profilePicture} type="button"/>
-        <Button text="Push me!" func={() => someFunctionOne("Bro")} type="submit"/>
+        <Button text="Don`t click me!" func={() => window.open(profilePicture())} 
+         type="button"/>
+        <Button text="Don't push me!" func={() => someFunctionOne("Bro")} type="submit"/>
 
         
       </div>
